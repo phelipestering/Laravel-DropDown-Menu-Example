@@ -15,6 +15,9 @@ return new class extends Migration
     {
         Schema::create('qualifications', function (Blueprint $table) {
             $table->id();
+            $table->string('discipline');
+            $table->string('description');
+            $table->string('acronym');
             $table->timestamps();
         });
     }
